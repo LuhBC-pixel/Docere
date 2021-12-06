@@ -1,0 +1,29 @@
+.phrase {
+  display: inline-flex;
+}
+
+.phrase::before {
+  content: '';
+  animation-name: text-animation;
+  animation-duration: 8s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes text-animation {
+  0% {
+    content: 'qualquer coisa';
+  }
+  25% {
+    content: 'programação';
+  }
+  50% {
+    content: 'marketing';
+  }
+  75% {
+    content: 'história';
+  }
+  100% {
+    content: 'finanças';
+  }
+}

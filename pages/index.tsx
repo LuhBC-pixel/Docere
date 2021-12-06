@@ -1,8 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Navbar from '../components/Navbar';
-import Main from '../components/Main';
-import { Box } from '@chakra-ui/react';
+import Main from '../components/Hero/Main'
 
 const Home: NextPage = () => {
   return (
@@ -17,9 +16,8 @@ const Home: NextPage = () => {
         />
       </Head>
       <Navbar />
-      <Box backgroundColor='blue'>
-        <Main />
-      </Box>
+
+      <Main />
     </>
   );
 };
