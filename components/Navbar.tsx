@@ -3,7 +3,6 @@ import Image from 'next/image';
 import {
   Box,
   Flex,
-  Avatar,
   HStack,
   Link,
   IconButton,
@@ -26,9 +25,13 @@ const NavLink = ({ children }: { children: ReactNode }) => (
     px={2}
     py={1}
     rounded={'md'}
+    color={'#776A7A'}
+    fontWeight={'bold'}
+    fontSize={'lg'}
     _hover={{
       textDecoration: 'none',
-      bg: useColorModeValue('gray.200', 'gray.700'),
+      color: '#fff',
+      bg: useColorModeValue('#9440AD', '#fff'),
     }}
     href={'#'}
   >
@@ -41,7 +44,7 @@ const Navbar = () => {
 
   return (
     <>
-      <Box bg={useColorModeValue('#8469E0', '#fff')} px={4}>
+      <Box px={90} mt={4} mb={6}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <Flex alignItems={'center'}>
             <Menu>
