@@ -31,7 +31,12 @@ const Navbar = () => {
           onClick={isOpen ? onClose : onOpen}
         />
         <HStack spacing={8} alignItems={'center'}>
-          <HStack as={'nav'} spacing={4} display={{ base: 'none', md: 'flex' }} fontSize='lg'>
+          <HStack
+            as={'nav'}
+            spacing={4}
+            display={{ base: 'none', md: 'flex' }}
+            fontSize='lg'
+          >
             <Link href='/'>Página Inicial</Link>
             <Link href='/sobre'>Sobre</Link>
             <Link href='/contato'>Contato</Link>
