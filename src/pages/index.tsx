@@ -1,16 +1,11 @@
-import {
-  Container,
-  Stack,
-  Flex,
-  Box,
-  Heading,
-  Text,
-  Image,
-} from '@chakra-ui/react';
+import type { NextPage } from 'next';
+import Image from 'next/image';
+import { Container, Stack, Flex, Box, Heading, Text } from '@chakra-ui/react';
 
-import styles from './Index.module.css';
+import styles from './index.module.css';
+import Teacher from '../assets/MenTeacher.jpg';
 
-export default function Index() {
+const Home: NextPage = () => {
   return (
     <Container maxW={'7xl'}>
       <Stack
@@ -43,7 +38,7 @@ export default function Index() {
             </Text>
             <br />
             <Text as={'span'} color={'red.400'}>
-              para estudar qualquer assunto
+              para quando precisar!
             </Text>
           </Heading>
           <Text color={'gray.500'} fontSize='2xl'>
@@ -61,23 +56,21 @@ export default function Index() {
         >
           <Box
             position={'relative'}
-            height={'300px'}
             rounded={'2xl'}
             boxShadow={'2xl'}
             width={'full'}
             overflow={'hidden'}
+            zIndex={10}
           >
             <Image
-              alt={'Hero Image'}
-              fit={'cover'}
-              align={'center'}
-              w={'100%'}
-              h={'100%'}
-              src={'/4905784.jpg'}
+              src={Teacher}
+              alt='Desenho de um professor dentro de um vídeo'
             />
           </Box>
         </Flex>
       </Stack>
     </Container>
   );
-}
+};
+
+export default Home;
