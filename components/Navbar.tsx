@@ -33,7 +33,7 @@ const NavLink = ({ children }: { children: ReactNode }) => (
       color: '#fff',
       bg: useColorModeValue('#9440AD', '#fff'),
     }}
-    href={'#'}
+    href={`/${children}`}
   >
     {children}
   </Link>
@@ -59,12 +59,6 @@ const Navbar = () => {
                   <Image src='/ChamaProf-logo.png' width={100} height={100} />
                 </Box>
               </MenuButton>
-              <MenuList>
-                <MenuItem>Link 1</MenuItem>
-                <MenuItem>Link 2</MenuItem>
-                <MenuDivider />
-                <MenuItem>Link 3</MenuItem>
-              </MenuList>
             </Menu>
           </Flex>
           <IconButton

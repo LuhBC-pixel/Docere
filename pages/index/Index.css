@@ -6,7 +6,7 @@
   content: '';
   animation-name: text-animation;
   animation-duration: 8s;
-  animation-delay: 2s;
+  animation-delay: 0;
   animation-iteration-count: infinite;
 }
 
@@ -14,14 +14,17 @@
   0% {
     content: 'qualquer coisa';
   }
-  25% {
+  20% {
     content: 'programação';
   }
-  50% {
+  40% {
     content: 'marketing';
   }
-  75% {
+  60% {
     content: 'história';
+  }
+  80% {
+    content: 'design';
   }
   100% {
     content: 'finanças';
