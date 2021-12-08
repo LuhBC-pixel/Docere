@@ -17,14 +17,14 @@ const Navbar = () => {
   return (
     <Box
       px={90}
-      mt={4}
+      mt={0}
       mb={6}
       width='100%'
       position='fixed'
       bgColor='white'
       zIndex='9999'
     >
-      <Flex h={20} alignItems={'center'} justifyContent={'space-between'}>
+      <Flex h={95} alignItems={'center'} justifyContent={'space-between'}>
         <Flex alignItems={'center'}>
           <Box>
             <Image src={Logo} width={100} height={100} />

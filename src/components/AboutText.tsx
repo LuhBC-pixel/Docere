@@ -32,12 +32,12 @@ const AboutText = () => {
       </Heading>
       <ComponentsText
         children={
-          'É um aplicativo que além de capacitar os pais a ensinarem aos seus filhos, ensina para qualquer um! Independentemente da deficiência ou se é analfabético.'
+          'É um aplicativo que além de capacitar os pais a ensinarem aos seus filhos, ensina para qualquer um!'
         }
       />
       <ComponentsText
         children={
-          'O aplicativo é inclusivo para todos, tem legendas nos vídeos, tem ferramenta para libras, tem ferramenta para passar o texto em áudio.Tudo isso desde a abertura do aplicativo até o fechamento do aplicativo.'
+          'O aplicativo é inclusivo para todos, tem legendas nos vídeos, tem ferramenta para libras, tem ferramenta para passar o texto em áudio. Tudo isso desde a abertura do aplicativo até o fechamento do aplicativo.'
         }
       />
       <ComponentsText
