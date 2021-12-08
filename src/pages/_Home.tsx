@@ -33,7 +33,7 @@ const Index = () => {
                 zIndex: -1,
               }}
             >
-              Chama Prof.
+              Docere
             </Text>
             <br />
             <Text as={'span'} color={'red.400'}>
@@ -43,7 +43,7 @@ const Index = () => {
           <Text color={'gray.500'} fontSize='2xl'>
             Necessita de ajuda para entender <p className={styles.phrase}></p>?
             <br />
-            Acessa o Chama Prof. É de graça!
+            Acessa o Docere. É de graça!
           </Text>
         </Stack>
         <Flex

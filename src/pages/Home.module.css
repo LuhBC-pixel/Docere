@@ -15,18 +15,18 @@
     content: 'qualquer coisa';
   }
   20% {
-    content: 'programação';
-  }
-  40% {
-    content: 'marketing';
-  }
-  60% {
     content: 'história';
   }
+  40% {
+    content: 'português';
+  }
+  60% {
+    content: 'matemática';
+  }
   80% {
-    content: 'design';
+    content: 'economia doméstica';
   }
   100% {
-    content: 'finanças';
+    content: 'programação';
   }
 }
