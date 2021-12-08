@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Logo from '../assets/ChamaProf-logo.png';
+import Logo from '../assets/Docere-logo.png';
 
 import {
   Box,
@@ -15,8 +15,16 @@ const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Box px={90} mt={4} mb={6}>
-      <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
+    <Box
+      px={90}
+      mt={4}
+      mb={6}
+      width='100%'
+      position='fixed'
+      bgColor='white'
+      zIndex='9999'
+    >
+      <Flex h={20} alignItems={'center'} justifyContent={'space-between'}>
         <Flex alignItems={'center'}>
           <Box>
             <Image src={Logo} width={100} height={100} />
@@ -38,6 +46,7 @@ const Navbar = () => {
           >
             <a href='#'>Página Inicial</a>
             <a href='#about'>Sobre</a>
+            <a href='#details'>Detalhe</a>
             <a href='#contato'>Contato</a>
           </HStack>
         </HStack>
@@ -48,6 +57,7 @@ const Navbar = () => {
           <Stack as={'nav'} spacing={4}>
             <a href='#'>Página Inicial</a>
             <a href='#about'>Sobre</a>
+            <a href='#details'>Detalhe</a>
             <a href='#contato'>Contato</a>
           </Stack>
         </Box>
