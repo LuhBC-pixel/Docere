@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import Logo from '../assets/ChamaProf-logo.png';
 
 import {
@@ -37,9 +36,9 @@ const Navbar = () => {
             display={{ base: 'none', md: 'flex' }}
             fontSize='lg'
           >
-            <Link href='/'>Página Inicial</Link>
-            <Link href='/sobre'>Sobre</Link>
-            <Link href='/contato'>Contato</Link>
+            <a href='#'>Página Inicial</a>
+            <a href='#about'>Sobre</a>
+            <a href='#contato'>Contato</a>
           </HStack>
         </HStack>
       </Flex>
@@ -47,9 +46,9 @@ const Navbar = () => {
       {isOpen ? (
         <Box pb={4} display={{ md: 'none' }}>
           <Stack as={'nav'} spacing={4}>
-            <Link href='/'>Página Inicial</Link>
-            <Link href='/sobre'>Sobre</Link>
-            <Link href='/contato'>Contato</Link>
+            <a href='#'>Página Inicial</a>
+            <a href='#about'>Sobre</a>
+            <a href='#contato'>Contato</a>
           </Stack>
         </Box>
       ) : null}

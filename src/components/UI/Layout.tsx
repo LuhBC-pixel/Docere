@@ -32,6 +32,7 @@ const Layout = ({ children }: LayoutProps) => {
         <link rel='manifest' href='/site.webmanifest' />
       </Head>
       <Navbar />
+
       <div>{children}</div>
     </>
   );
