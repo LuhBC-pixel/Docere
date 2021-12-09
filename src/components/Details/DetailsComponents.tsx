@@ -7,7 +7,7 @@ interface DetailsProps {
   icon: ReactElement;
 }
 
-const DetailsText = ({ title, text, icon }: DetailsProps) => {
+const DetailsComponents = ({ title, text, icon }: DetailsProps) => {
   return (
     <Stack>
       <Flex
@@ -28,4 +28,4 @@ const DetailsText = ({ title, text, icon }: DetailsProps) => {
   );
 };
 
-export default DetailsText;
+export default DetailsComponents;
