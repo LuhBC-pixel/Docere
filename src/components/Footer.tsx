@@ -25,7 +25,7 @@ const Footer = () => {
         justify={'center'}
         align={'center'}
       >
-        <Image src={Logo} width={50} height={50} />
+        <Image src={Logo} width={50} height={50} alt='Docere logo' />
         <Stack direction={'row'} spacing={6}>
           <Link href={'#'}>Página Inicial</Link>
           <Link href={'#about'}>Sobre</Link>

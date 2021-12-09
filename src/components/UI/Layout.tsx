@@ -10,6 +10,7 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <>
       <Head>
+        <html lang='pt-Br'></html>
         <title>Chama Prof.</title>
         <meta name='description' content='Chama Prof.' />
         <link

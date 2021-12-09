@@ -9,7 +9,7 @@ import {
   Stack,
   useColorMode,
   Button,
-  useColorModeValue
+  useColorModeValue,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
@@ -59,7 +59,10 @@ const Navbar = () => {
             <a href='#details'>Detalhe</a>
           </HStack>
           <Stack direction={'row'} spacing={7}>
-            <Button onClick={toggleColorMode}>
+            <Button
+              onClick={toggleColorMode}
+              aria-label='botão que faz o site mudar de cor'
+            >
               {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
             </Button>
           </Stack>
