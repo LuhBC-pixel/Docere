@@ -47,7 +47,6 @@ const Navbar = () => {
             <a href='#'>Página Inicial</a>
             <a href='#about'>Sobre</a>
             <a href='#details'>Detalhe</a>
-            <a href='#contato'>Contato</a>
           </HStack>
         </HStack>
       </Flex>
@@ -58,7 +57,6 @@ const Navbar = () => {
             <a href='#'>Página Inicial</a>
             <a href='#about'>Sobre</a>
             <a href='#details'>Detalhe</a>
-            <a href='#contato'>Contato</a>
           </Stack>
         </Box>
       ) : null}

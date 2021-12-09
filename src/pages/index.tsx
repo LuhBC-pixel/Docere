@@ -9,6 +9,7 @@ const Index: NextPage = () => {
       <Home />
       <About />
       <Details />
+  
     </>
   );
 };
