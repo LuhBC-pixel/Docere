@@ -19,6 +19,7 @@ const FooterSocialButton = ({
       cursor={'pointer'}
       as={'a'}
       href={href}
+      rel='noreferrer'
       target={'_blank'}
       display={'inline-flex'}
       alignItems={'center'}

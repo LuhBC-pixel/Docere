@@ -12,7 +12,7 @@ const Layout = ({ children }: LayoutProps) => {
       <Head>
         <html lang='pt-Br'></html>
         <title>Chama Prof.</title>
-        <meta name='description' content='Chama Prof.' />
+        <meta name='description' content='Docere' />
         <link
           rel='apple-touch-icon'
           sizes='180x180'
