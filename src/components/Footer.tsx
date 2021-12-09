@@ -7,7 +7,7 @@ import {
   Text,
   useColorModeValue,
 } from '@chakra-ui/react';
-import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { FaDev, FaGithub, FaLinkedin } from 'react-icons/fa';
 import FooterSocialButton from './Footer/FooterSocialButton';
 import Logo from '../assets/Docere-logo.png';
 
@@ -49,14 +49,23 @@ const Footer = () => {
         >
           <Text>© 2021 Luisa Boina Coltro. Todos os direitos reservados</Text>
           <Stack direction={'row'} spacing={6}>
-            <FooterSocialButton label={'Twitter'} href={'#'}>
-              <FaTwitter />
+            <FooterSocialButton
+              label={'Github'}
+              href={'https://github.com/LuhBC-pixel'}
+            >
+              <FaGithub />
             </FooterSocialButton>
-            <FooterSocialButton label={'YouTube'} href={'#'}>
-              <FaYoutube />
+            <FooterSocialButton
+              label={'Linkedin'}
+              href={'https://www.linkedin.com/in/luisa-boina-02294014b/'}
+            >
+              <FaLinkedin />
             </FooterSocialButton>
-            <FooterSocialButton label={'Instagram'} href={'#'}>
-              <FaInstagram />
+            <FooterSocialButton
+              label={'Site Portofólio'}
+              href={'https://meu-site-drab.vercel.app/'}
+            >
+              <FaDev />
             </FooterSocialButton>
           </Stack>
         </Container>

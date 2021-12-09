@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import {  chakra, useColorModeValue, VisuallyHidden } from '@chakra-ui/react';
+import { chakra, useColorModeValue, VisuallyHidden } from '@chakra-ui/react';
 
 const FooterSocialButton = ({
   children,
@@ -19,6 +19,7 @@ const FooterSocialButton = ({
       cursor={'pointer'}
       as={'a'}
       href={href}
+      target={'_blank'}
       display={'inline-flex'}
       alignItems={'center'}
       justifyContent={'center'}
