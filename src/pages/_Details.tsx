@@ -1,33 +1,6 @@
-import { ReactElement } from 'react';
-import { Box, SimpleGrid, Icon, Text, Stack, Flex } from '@chakra-ui/react';
+import { Box, SimpleGrid, Icon } from '@chakra-ui/react';
 import { FcQuestions, FcMultipleDevices, FcLike } from 'react-icons/fc';
-
-interface DetailsProps {
-  title: string;
-  text: string;
-  icon: ReactElement;
-}
-
-const DetailsText = ({ title, text, icon }: DetailsProps) => {
-  return (
-    <Stack>
-      <Flex
-        w={16}
-        h={16}
-        align={'center'}
-        justify={'center'}
-        color={'white'}
-        rounded={'full'}
-        bg={'gray.100'}
-        mb={1}
-      >
-        {icon}
-      </Flex>
-      <Text fontWeight={600}>{title}</Text>
-      <Text color={'gray.600'}>{text}</Text>
-    </Stack>
-  );
-};
+import DetailsText from '../components/DetailsText';
 
 const Details = () => {
   return (
