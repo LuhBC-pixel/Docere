@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Logo from '../assets/Docere-logo.png';
-
 import {
   Box,
   Flex,
@@ -8,10 +7,15 @@ import {
   IconButton,
   useDisclosure,
   Stack,
+  useColorMode,
+  Button,
+  useColorModeValue
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
+import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 
 const Navbar = () => {
+  const { colorMode, toggleColorMode } = useColorMode();
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
@@ -21,7 +25,7 @@ const Navbar = () => {
       mb={6}
       width='100%'
       position='fixed'
-      bgColor='white'
+      bgColor={useColorModeValue('white', 'gray.900')}
       zIndex='9999'
     >
       <Flex h={95} alignItems={'center'} justifyContent={'space-between'}>
@@ -31,7 +35,8 @@ const Navbar = () => {
               src={Logo}
               width={100}
               height={100}
-              alt='Docere logo, possui um farol e embaixo tem o nome Docere'
+              alt='Docere logo, possui um farol e embaixo tem o nome Docere
+              '
             />
           </Box>
         </Flex>
@@ -53,6 +58,11 @@ const Navbar = () => {
             <a href='#about'>Sobre</a>
             <a href='#details'>Detalhe</a>
           </HStack>
+          <Stack direction={'row'} spacing={7}>
+            <Button onClick={toggleColorMode}>
+              {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+            </Button>
+          </Stack>
         </HStack>
       </Flex>
 
