@@ -10,7 +10,7 @@ const ComponentsText = ({ text }: IPropsChildren) => {
     <Text
       as='p'
       marginTop='2'
-      color={useColorModeValue('gray.700', 'gray.200')}
+      color={useColorModeValue('gray.700', 'white')}
       fontSize='lg'
     >
       {text}
