@@ -27,7 +27,12 @@ const Navbar = () => {
       <Flex h={95} alignItems={'center'} justifyContent={'space-between'}>
         <Flex alignItems={'center'}>
           <Box>
-            <Image src={Logo} width={100} height={100} />
+            <Image
+              src={Logo}
+              width={100}
+              height={100}
+              alt='Docere logo, possui um farol e embaixo tem o nome Docere'
+            />
           </Box>
         </Flex>
         <IconButton
