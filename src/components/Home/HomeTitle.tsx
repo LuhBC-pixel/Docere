@@ -1,8 +1,25 @@
 import { Heading, Text, Stack } from '@chakra-ui/react';
+import { useEffect, useState } from 'react';
 
 import styles from './Home.module.css';
 
 const HomeTitle = () => {
+  const [disciplineIndex, setDisciplineIndex] = useState(0);
+  const disciplines = [
+    'qualquer coisa',
+    'história',
+    'português',
+    'matemática',
+    'economia doméstica',
+    'programação',
+  ];
+
+  useEffect(() => {
+    setInterval(() => {
+        setDisciplineIndex((disciplineIndex + 1) % disciplines.length)
+    }, 2500)
+})
+
   return (
     <Stack flex={1} spacing={{ base: 5, md: 10 }}>
       <Heading
@@ -32,7 +49,7 @@ const HomeTitle = () => {
         </Text>
       </Heading>
       <Text color={'gray.500'} fontSize='2xl'>
-        Necessita de ajuda para entender <p className={styles.phrase}></p>?
+        Necessita de ajuda para entender {disciplines[disciplineIndex]}?
         <br />
         Acessa o Docere. É de graça!
       </Text>
