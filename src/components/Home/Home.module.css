@@ -35,23 +35,3 @@
   }
 }
 
-@-webkit-keyframes text-animation {
-  0% {
-    content: 'qualquer coisa';
-  }
-  20% {
-    content: 'história';
-  }
-  40% {
-    content: 'português';
-  }
-  60% {
-    content: 'matemática';
-  }
-  80% {
-    content: 'economia doméstica';
-  }
-  100% {
-    content: 'programação';
-  }
-}
