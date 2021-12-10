@@ -18,7 +18,7 @@ const Navbar = () => {
       bgColor={useColorModeValue('white', 'gray.900')}
       zIndex='9999'
     >
-      <Flex maxH={90} alignItems={'center'} justifyContent={'space-between'}>
+      <Flex maxH={85} alignItems={'center'} justifyContent={'space-between'}>
         <NavbarImage />
         <NavbarIcons isOpen={isOpen} onClose={onClose} onOpen={onOpen} />
       </Flex>
