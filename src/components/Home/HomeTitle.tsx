@@ -1,7 +1,6 @@
 import { Heading, Text, Stack } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
 
-
 const HomeTitle = () => {
   const [disciplineIndex, setDisciplineIndex] = useState(0);
   const disciplines: String[] = [
@@ -19,7 +18,7 @@ const HomeTitle = () => {
     }, 2500);
 
     return () => clearInterval(interval);
-  });
+  }, [disciplineIndex]);
 
   return (
     <Stack flex={1} spacing={{ base: 5, md: 10 }}>
