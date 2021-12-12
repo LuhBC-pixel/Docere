@@ -1,7 +1,8 @@
-import { Container, Stack } from '@chakra-ui/react';
 import loadable from '@loadable/component';
 const HomeTitle = loadable(() => import('../components/Home/HomeTitle'));
 const HomeImage = loadable(() => import('../components/Home/HomeImage'));
+
+import { Container, Stack } from '@chakra-ui/react';
 
 const Index = () => {
   return (

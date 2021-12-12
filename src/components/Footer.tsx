@@ -1,3 +1,7 @@
+import loadable from '@loadable/component';
+const FooterIcons = loadable(() => import('./Footer/FooterIcons'));
+const Image = loadable(() => import('next/image'));
+
 import {
   Box,
   Container,
@@ -6,10 +10,6 @@ import {
   Text,
   useColorModeValue,
 } from '@chakra-ui/react';
-import loadable from '@loadable/component';
-const FooterIcons = loadable(() => import('./Footer/FooterIcons'));
-const Image = loadable(() => import('next/image'));
-
 import Logo from '../assets/Docere-logo.png';
 
 const Footer = () => {

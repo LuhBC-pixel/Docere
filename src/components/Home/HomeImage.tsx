@@ -1,10 +1,11 @@
+import React from 'react';
 import loadable from '@loadable/component';
 const Image = loadable(() => import('next/image'));
 import { Flex, Box } from '@chakra-ui/react';
 
 import Teacher from '../../assets/MenTeacher.png';
 
-const HomeImage = () => {
+const HomeImage: React.FC = () => {
   return (
     <Flex
       flex={1}

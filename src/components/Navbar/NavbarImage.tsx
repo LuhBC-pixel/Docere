@@ -1,10 +1,11 @@
+import React from 'react';
 import loadable from '@loadable/component';
 const Image = loadable(() => import('next/image'));
-import Logo from '../../assets/Docere-logo.png';
 
+import Logo from '../../assets/Docere-logo.png';
 import { Flex, Box } from '@chakra-ui/react';
 
-const NavbarImage = () => {
+const NavbarImage: React.FC = () => {
   return (
     <Flex alignItems={'center'}>
       <Box>

@@ -1,10 +1,11 @@
-import { Stack } from '@chakra-ui/react';
+import React from 'react';
 import loadable from '@loadable/component';
-import { FaDev, FaGithub, FaLinkedin } from 'react-icons/fa';
-
 const FooterSocialButton = loadable(() => import('./FooterSocialButton'));
 
-const FooterIcons = () => {
+import { Stack } from '@chakra-ui/react';
+import { FaDev, FaGithub, FaLinkedin } from 'react-icons/fa';
+
+const FooterIcons: React.FC = () => {
   return (
     <Stack direction={'row'} spacing={6}>
       <FooterSocialButton

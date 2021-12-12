@@ -1,10 +1,10 @@
-import { Box, Heading } from '@chakra-ui/react';
+import React from 'react';
 import loadable from '@loadable/component';
-const AboutComponentsText = loadable(
-  () => import('./AboutComponentsText')
-);
+const AboutComponentsText = loadable(() => import('./AboutComponentsText'));
 
-const AboutText = () => {
+import { Box, Heading } from '@chakra-ui/react';
+
+const AboutText: React.FC = () => {
   return (
     <Box
       display='flex'

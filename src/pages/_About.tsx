@@ -1,8 +1,8 @@
-import { Box, Heading, Container } from '@chakra-ui/react';
 import loadable from '@loadable/component';
 const AboutText = loadable(() => import('../components/About/AboutText'));
 const Image = loadable(() => import('next/image'));
 
+import { Box, Heading, Container } from '@chakra-ui/react';
 import Learning from '../assets/MotherAndKindLearning.jpeg';
 
 const About = () => {

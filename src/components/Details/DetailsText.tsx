@@ -1,11 +1,12 @@
-import { SimpleGrid, Icon } from '@chakra-ui/react';
-
+import React from 'react';
 import loadable from '@loadable/component';
 const DetailsComponents = loadable(() => import('./DetailsComponents'));
 
+import { SimpleGrid, Icon } from '@chakra-ui/react';
+
 import { FcQuestions, FcMultipleDevices, FcLike } from 'react-icons/fc';
 
-const DetailsText = () => {
+const DetailsText: React.FC = () => {
   return (
     <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
       <DetailsComponents

@@ -1,15 +1,17 @@
 import { ReactNode } from 'react';
 import { chakra, useColorModeValue, VisuallyHidden } from '@chakra-ui/react';
 
+interface IFooterSocialButtonProps {
+  children: ReactNode;
+  label: string;
+  href: string;
+}
+
 const FooterSocialButton = ({
   children,
   label,
   href,
-}: {
-  children: ReactNode;
-  label: string;
-  href: string;
-}) => {
+}: IFooterSocialButtonProps) => {
   return (
     <chakra.button
       bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
