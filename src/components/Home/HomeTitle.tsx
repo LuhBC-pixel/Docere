@@ -1,9 +1,10 @@
 import { Heading, Text, Stack } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
 
+
 const HomeTitle = () => {
   const [disciplineIndex, setDisciplineIndex] = useState(0);
-  const disciplines = [
+  const disciplines: String[] = [
     'qualquer coisa',
     'história',
     'português',
