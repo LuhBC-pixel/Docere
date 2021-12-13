@@ -20,7 +20,7 @@ const HomeTitle: React.FC = () => {
     }, 2500);
 
     return () => clearInterval(interval);
-  }, [disciplineIndex]);
+  }, []);
 
   return (
     <Stack flex={1} spacing={{ base: 5, md: 10 }}>
