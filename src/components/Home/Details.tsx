@@ -1,7 +1,8 @@
-import loadable from '@loadable/component'
-const DetailsText = loadable(() => import('../components/Details/DetailsText'));
+import dynamic from 'next/dynamic';
 
 import { Box } from '@chakra-ui/react';
+
+const DetailsText = dynamic(() => import('../_subComponents/Details/DetailsText'));
 
 const Details = () => {
   return (

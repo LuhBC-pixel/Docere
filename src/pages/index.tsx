@@ -1,17 +1,15 @@
-import type { NextPage } from 'next';
-import Home from './_Home';
-import About from './_About';
-import Details from './_Details';
+import Home from "../components/Home/Home"
+import About from "../components/Home/About"
+import Details from "../components/Home/Details"
 
-const Index: NextPage = () => {
-  return (
-    <>
-      <Home />
-      <About />
-      <Details />
-  
-    </>
-  );
-};
+const Index= () => {
+	return (
+		<>
+			<Home />
+			<About />
+			<Details />
+		</>
+	)
+}
 
-export default Index;
+export default Index
