@@ -1,9 +1,10 @@
-import loadable from '@loadable/component';
-const AboutText = loadable(() => import('../components/About/AboutText'));
-const Image = loadable(() => import('next/image'));
+import dynamic from 'next/dynamic';
+import Image from 'next/image';
+import Learning from '../../assets/MotherAndKindLearning.jpeg';
 
 import { Box, Heading, Container } from '@chakra-ui/react';
-import Learning from '../assets/MotherAndKindLearning.jpeg';
+
+const AboutText = dynamic(() => import('../_subComponents/About/AboutText'));
 
 const About = () => {
   return (
