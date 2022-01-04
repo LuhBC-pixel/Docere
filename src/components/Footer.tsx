@@ -1,17 +1,16 @@
 import dynamic from 'next/dynamic';
-import Logo from "../assets/Docere-logo.png"
 
 import {
   Box,
   Container,
-  Link,
   Stack,
   Text,
   useColorModeValue,
 } from '@chakra-ui/react';
 
-const FooterIcons = dynamic(() => import('./_subComponents/Footer/FooterIcons'));
-const Image = dynamic(() => import('next/image'));
+const FooterIcons = dynamic(
+  () => import('./_subComponents/Footer/FooterIcons')
+);
 
 const Footer = () => {
   return (
@@ -19,8 +18,6 @@ const Footer = () => {
       bg={useColorModeValue('gray.50', 'gray.900')}
       color={useColorModeValue('gray.700', 'gray.200')}
     >
-
-
       <Box
         borderTopWidth={1}
         borderStyle={'solid'}

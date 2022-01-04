@@ -1,34 +1,39 @@
-import { chakra, useColorModeValue, VisuallyHidden } from "@chakra-ui/react"
+import { chakra, useColorModeValue, VisuallyHidden } from '@chakra-ui/react';
 
 interface IFooterSocialButtonProps {
-	children: JSX.Element
-	label: string
-	href: string
+  children: JSX.Element;
+  label: string;
+  href: string;
 }
 
-const FooterSocialButton = ({ children, label, href }: IFooterSocialButtonProps) => {
-	return (
-		<chakra.button
-			bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
-			rounded={"full"}
-			w={8}
-			h={8}
-			cursor={"pointer"}
-			as={"a"}
-			href={href}
-			rel="noreferrer"
-			target={"_blank"}
-			display={"inline-flex"}
-			alignItems={"center"}
-			justifyContent={"center"}
-			transition={"background 0.3s ease"}
-			_hover={{
-				bg: useColorModeValue("blackAlpha.200", "whiteAlpha.200"),
-			}}>
-			<VisuallyHidden>{label}</VisuallyHidden>
-			{children}
-		</chakra.button>
-	)
-}
+const FooterSocialButton = ({
+  children,
+  label,
+  href,
+}: IFooterSocialButtonProps) => {
+  return (
+    <chakra.button
+      bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
+      rounded={'full'}
+      w={8}
+      h={8}
+      cursor={'pointer'}
+      as={'a'}
+      href={href}
+      rel='noreferrer'
+      target={'_blank'}
+      display={'inline-flex'}
+      alignItems={'center'}
+      justifyContent={'center'}
+      transition={'background 0.3s ease'}
+      _hover={{
+        bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
+      }}
+    >
+      <VisuallyHidden>{label}</VisuallyHidden>
+      {children}
+    </chakra.button>
+  );
+};
 
-export default FooterSocialButton
+export default FooterSocialButton;
